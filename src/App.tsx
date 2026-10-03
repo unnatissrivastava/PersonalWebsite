@@ -377,12 +377,12 @@ function LittleThings() {
 }
  
 const keepsakes = [
-  "This one makes me smile every time.",
-  "A little piece of us.",
-  "I wish I could keep this moment a little longer.",
+  "you make me feel the safest around you <3",
+  "you are the best thing that's ever been mine!!",
+  "you make even silence feel comfortable",
   "Just us. That's enough.",
-  "One of my favourite memories.",
-  "Proof that ordinary moments can mean everything.",
+  "if i could relive one thing, i'd choose more moments with you<3",
+  "our relationship is proof that ordinary moments can mean everything.",
 ];
  
 function Keepsakes() {
