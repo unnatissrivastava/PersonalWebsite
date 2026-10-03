@@ -143,15 +143,10 @@ function Opening({
         <div className="envelope">
           <div className="envelope-back" />
           <div className="letter-preview">
-           <p>Hi baby. ❤️</p>
-
+           <p>hi baby❤️</p>
            <p>I hope this little surprise brings the biggest smile to your face, because you deserve all the love and all the little things that make you happy:)</p>
-
-           <p>You're my favourite person to annoy, my safest little comfort, and the one I want to share all my random thoughts and stupid stories with. 😭</p>
-
-           <p>I love youuu so so muchhh ♡</p>
-
-           <p>Ab andar aao naaa, tumhare liye aur bhi pyaar rakha hai. 🥹</p>
+           <p>I love you so muchh ♡</p>
+           <p>Ab andar aao, tumhare liye aur bhi pyaar rakha hai. 🥹</p>
 
            <button className="ink-button" onClick={onEnter}>
              clickkkkkkkkkkk <span>→</span>
