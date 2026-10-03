@@ -145,11 +145,11 @@ function Opening({
           <div className="letter-preview">
            <p>Hi baby. ❤️</p>
 
-           <p>I hope this little surprise brings the biggest smile to your face, because you deserve all the love and all the little things that make you happy.</p>
+           <p>I hope this little surprise brings the biggest smile to your face, because you deserve all the love and all the little things that make you happy:)</p>
 
-           <p>I don't think I'll ever get tired of telling you how much you mean to me. You're my favourite person to annoy, my safest little comfort, and the one I want to share all my random thoughts and stupid stories with. 😭</p>
+           <p>You're my favourite person to annoy, my safest little comfort, and the one I want to share all my random thoughts and stupid stories with. 😭</p>
 
-           <p>I love youuu so so muchhh, my kuchu puchu. Thank you for being you, and for being my favourite part of so many ordinary days. ♡</p>
+           <p>I love youuu so so muchhh ♡</p>
 
            <p>Ab andar aao naaa, tumhare liye aur bhi pyaar rakha hai. 🥹</p>
 
