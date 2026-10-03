@@ -143,12 +143,19 @@ function Opening({
         <div className="envelope">
           <div className="envelope-back" />
           <div className="letter-preview">
-            <p>Hi baby. ❤️</p>
-            <p>Agar kuchu puchu tum yaha tk aagye ho, then i loveee youuuuu 😭</p>
-            <p>Ab andar aao. Tumhare liye kaafi kuch rakha hai.</p>
-            <button className="ink-button" onClick={onEnter}>
-              clickkkkkkkkkkkk <span>→</span>
-            </button>
+           <p>Hi baby. ❤️</p>
+
+           <p>I hope this little surprise brings the biggest smile to your face, because you deserve all the love and all the little things that make you happy.</p>
+
+           <p>I don't think I'll ever get tired of telling you how much you mean to me. You're my favourite person to annoy, my safest little comfort, and the one I want to share all my random thoughts and stupid stories with. 😭</p>
+
+           <p>I love youuu so so muchhh, my kuchu puchu. Thank you for being you, and for being my favourite part of so many ordinary days. ♡</p>
+
+           <p>Ab andar aao naaa, tumhare liye aur bhi pyaar rakha hai. 🥹</p>
+
+           <button className="ink-button" onClick={onEnter}>
+             clickkkkkkkkkkk <span>→</span>
+           </button>
           </div>
           <div className="envelope-front" />
           <div className="envelope-flap" />
