@@ -200,15 +200,15 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--gold); outl
 .keepsakes { background: var(--dark-wine); color: var(--cream); }
 .keepsakes .chapter-heading h1 { color: var(--cream); }
 .keepsakes .chapter-intro { color: #d9c6ae; }
-.keepsake-board { max-width: 70rem; min-height: 56rem; margin: auto; position: relative; border: 1px solid rgba(182,154,105,.5); background: #3b1821; box-shadow: inset 0 0 5rem rgba(0,0,0,.25); }
+.keepsake-board { max-width: 70rem; min-height: 48rem; margin: auto; position: relative; border: 1px solid rgba(182,154,105,.5); background: #3b1821; box-shadow: inset 0 0 5rem rgba(0,0,0,.25); }
 .keepsake { position: absolute; background: var(--paper); color: var(--ink); padding: 1.4rem; width: 16rem; min-height: 9rem; box-shadow: 5px 7px 12px rgba(0,0,0,.25); }
 .keepsake span, .keepsake small { font-size: .52rem; letter-spacing: .16em; color: var(--rose); }
 .keepsake p { font: 500 1.45rem/1.2 var(--serif); margin: 1rem 0; }
 .keepsake-1 { top: 8%; left: 7%; transform: rotate(-4deg); }.keepsake-2 { top: 10%; left: 39%; transform: rotate(2deg); }.keepsake-3 { top: 5%; right: 5%; transform: rotate(5deg); }
 .keepsake-4 { bottom: 12%; left: 12%; transform: rotate(3deg); }.keepsake-5 { bottom: 8%; left: 43%; transform: rotate(-3deg); }.keepsake-6 { bottom: 13%; right: 4%; transform: rotate(2deg); }
-.board-note { position: absolute; top: 34%; left: 50%; transform: translateX(-50%); width: min(34rem, 90%); text-align: center; color: var(--gold); font: 1.6rem var(--hand); }
-.board-note-short { display: block; transform: rotate(-3deg); margin-bottom: .9rem; }
-.board-story p { font: 500 1.3rem/1.35 var(--hand); color: var(--gold); margin: 0 0 .7rem; }
+.board-note { position: absolute; top: 36.5%; left: 50%; transform: translateX(-50%); width: min(46rem, 90%); text-align: center; color: var(--gold); font: 1.6rem var(--hand); }
+.board-note-short { display: block; transform: rotate(-3deg); margin-bottom: .6rem; }
+.board-story p { font: 500 1.2rem/1.3 var(--hand); color: var(--gold); margin: 0 0 .7rem; }
  
 /* Timeline */
 .story { background: #ead9bd; }
