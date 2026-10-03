@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-
+ 
 type Track = {
   title: string;
   file: string;
   note: string;
   treatment: string;
 };
-
+ 
 const tracks: Track[] = [
   {
     title: "KALANK TITLE TRACK",
@@ -39,7 +39,7 @@ const tracks: Track[] = [
     treatment: "last-note",
   },
 ];
-
+ 
 const chapterNames = [
   "Private Delivery",
   "The Archive",
@@ -54,7 +54,7 @@ const chapterNames = [
   "The Box of Promises",
   "The Final Letter",
 ];
-
+ 
 const promises = [
   {
     title: "FOR THE HARD DAYS",
@@ -77,14 +77,14 @@ const promises = [
     text: "I promise not to take the little things for granted. The comfort, the laughter, the familiarity, and the effort. I want us to keep choosing those things.",
   },
 ];
-
+ 
 function formatTime(value: number) {
   if (!Number.isFinite(value)) return "0:00";
   const minutes = Math.floor(value / 60);
   const seconds = Math.floor(value % 60);
   return `${minutes}:${seconds.toString().padStart(2, "0")}`;
 }
-
+ 
 function Flourish({ children = "A private collection" }: { children?: string }) {
   return (
     <div className="flourish" aria-hidden="true">
@@ -94,7 +94,7 @@ function Flourish({ children = "A private collection" }: { children?: string }) 
     </div>
   );
 }
-
+ 
 function ChapterHeading({
   eyebrow,
   title,
@@ -112,7 +112,7 @@ function ChapterHeading({
     </header>
   );
 }
-
+ 
 function Opening({
   opened,
   onOpen,
@@ -166,7 +166,7 @@ function Opening({
     </section>
   );
 }
-
+ 
 function ArchiveWelcome({ onExplore }: { onExplore: () => void }) {
   return (
     <section className="chapter archive-welcome">
@@ -194,14 +194,14 @@ function ArchiveWelcome({ onExplore }: { onExplore: () => void }) {
     </section>
   );
 }
-
+ 
 function MusicRoom() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [active, setActive] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-
+ 
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -219,7 +219,7 @@ function MusicRoom() {
       audio.removeEventListener("ended", onEnded);
     };
   }, [active]);
-
+ 
   const toggleTrack = (index: number) => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -240,12 +240,12 @@ function MusicRoom() {
       audio.play().catch(() => setPlaying(false));
     }
   };
-
+ 
   const seek = (value: number) => {
     if (audioRef.current) audioRef.current.currentTime = value;
     setCurrentTime(value);
   };
-
+ 
   return (
     <section className="chapter music-room">
       <ChapterHeading
@@ -306,7 +306,7 @@ function MusicRoom() {
     </section>
   );
 }
-
+ 
 function WhoYouAre() {
   return (
     <section className="chapter journal-chapter">
@@ -321,7 +321,7 @@ function WhoYouAre() {
     </section>
   );
 }
-
+ 
 const loveReasons = [
   ["01", "The comfort you give me", "Tumhare saath mujhe woh version banne ki zarurat nahi padti jo sabko pasand aaye. I can just exist. Kabhi stupid, kabhi dramatic, kabhi extra clingy and you get to see all of it."],
   ["02", "The random conversations", "Hum kitni bhi random baat kar sakte hain and somehow mujhe woh conversations bhi yaad reh jaati hain. Kabhi topic hota hai, kabhi nahi hota, but I still want to keep talking to you."],
@@ -329,7 +329,7 @@ const loveReasons = [
   ["04", "Your place in my everyday life", "Tum meri everyday life ka part ban gaye ho. Kuch bhi hota hai toh tumhe batane ka mann karta hai. Aur jab koi cheez tumhe batati hoon, toh woh moment somehow aur real lagta hai."],
   ["05", "You, being you", "Honestly, mujhe tumhari har ek cheez ko words mein explain karna nahi aata. Kabhi bas tum hote ho, and that's enough to make me smile at my phone like an idiot. 😭"],
 ];
-
+ 
 function ThingsILove() {
   return (
     <section className="chapter reasons-chapter">
@@ -350,7 +350,7 @@ function ThingsILove() {
     </section>
   );
 }
-
+ 
 function LittleThings() {
   return (
     <section className="chapter little-things">
@@ -373,7 +373,7 @@ function LittleThings() {
     </section>
   );
 }
-
+ 
 const keepsakes = [
   "This one makes me smile every time.",
   "A little piece of us.",
@@ -382,7 +382,7 @@ const keepsakes = [
   "One of my favourite memories.",
   "Proof that ordinary moments can mean everything.",
 ];
-
+ 
 function Keepsakes() {
   return (
     <section className="chapter keepsakes">
@@ -399,12 +399,18 @@ function Keepsakes() {
             <small>ARCHIVED / US</small>
           </article>
         ))}
-        <div className="board-note">nothing dramatic.<br />just ours. ♡</div>
+        <div className="board-note">
+          <span className="board-note-short">nothing dramatic.<br />just ours. ♡</span>
+          <div className="board-story">
+            <p>Maybe our story isn't made of grand gestures or perfect moments. Maybe it's made of all the little things — the random conversations, the silly laughs, the comfort of being ourselves, and choosing each other even on difficult days.</p>
+            <p>I hope we never stop finding our way back to these little moments. Because somehow, they became my favourite part of us. ♡</p>
+          </div>
+        </div>
       </div>
     </section>
   );
 }
-
+ 
 const timeline = [
   ["THE BEGINNING", "Somewhere along the way, you became someone I wanted to talk to, share things with, and make space for in my life."],
   ["GETTING CLOSER", "Conversations, little details, and slowly becoming a part of each other's everyday lives."],
@@ -412,7 +418,7 @@ const timeline = [
   ["CHOOSING TO TRY", "I'm so glad we didn't give up on us just because things weren't always easy. I'm glad we gave each other time, kept trying, and found our way back to each other."],
   ["RIGHT NOW", "Still learning each other. Still growing. Still figuring things out. And I'm happy that I get to do that with you."],
 ];
-
+ 
 function OurStory() {
   return (
     <section className="chapter story">
@@ -424,7 +430,6 @@ function OurStory() {
       <div className="timeline">
         {timeline.map(([title, text], index) => (
           <article key={title}>
-            <div className="timeline-date" contentEditable suppressContentEditableWarning>DATE / ———</div>
             <span className="timeline-dot">{index + 1}</span>
             <div><h2>{title}</h2><p>{text}</p></div>
           </article>
@@ -433,14 +438,20 @@ function OurStory() {
     </section>
   );
 }
-
+ 
 const definitions = [
   ["BHUKKAD", "noun", "The version of me that appears when I'm comfortable enough around you to eat without pretending to be graceful."],
   ["ABSOLUTE NONSENSE", "noun", "Our conversations, probably. No context required. Somehow still important."],
   ["US", "noun", "Two people figuring things out, sometimes getting it wrong, talking it through, and choosing to keep trying."],
   ["LONG DISTANCE", "noun", "A reminder that being far away doesn't mean someone has to feel far from your life."],
 ];
-
+ 
+const insideJokes = [
+  ["THE COMFORT OF YOU", "You make even the most ordinary days feel a little softer. I love that I can be completely myself around you — no pretending, no overthinking, just me."],
+  ["MY FAVOURITE KIND OF CHAOS", "From our random talks to our silly arguments, there's so much of us that probably wouldn't make sense to anyone else. And honestly, I wouldn't trade it."],
+  ["STILL CHOOSING US", "We haven't always had it easy, but I'm grateful we kept trying. I hope we keep growing, learning, laughing, and choosing each other — one day at a time. ♡"],
+];
+ 
 function Dictionary() {
   return (
     <section className="chapter dictionary">
@@ -452,16 +463,16 @@ function Dictionary() {
             <h2>{word}</h2><i>{type}</i><p>{definition}</p>
           </article>
         ))}
-        {[1, 2, 3].map((number) => (
-          <article className="empty-definition" key={number} contentEditable suppressContentEditableWarning>
-            <h2>YOUR INSIDE JOKE HERE</h2><i>add your own</i><p>Click to edit this empty archive entry...</p>
+        {insideJokes.map(([word, definition]) => (
+          <article key={word}>
+            <h2>{word}</h2><p>{definition}</p>
           </article>
         ))}
       </div>
     </section>
   );
 }
-
+ 
 function ChooseAgain() {
   return (
     <section className="chapter choose-again">
@@ -482,7 +493,7 @@ function ChooseAgain() {
     </section>
   );
 }
-
+ 
 function PromiseBox() {
   const [openPromises, setOpenPromises] = useState<number[]>([]);
   const toggle = (index: number) => {
@@ -519,7 +530,7 @@ function PromiseBox() {
     </section>
   );
 }
-
+ 
 function FinalLetter() {
   return (
     <section className="chapter final-letter">
@@ -543,13 +554,13 @@ function FinalLetter() {
     </section>
   );
 }
-
+ 
 function App() {
   const [chapter, setChapter] = useState(0);
   const [envelopeOpen, setEnvelopeOpen] = useState(false);
   const [indexOpen, setIndexOpen] = useState(false);
   const [transitioning, setTransitioning] = useState(false);
-
+ 
   const goTo = (next: number) => {
     if (next < 0 || next > 11 || next === chapter) return;
     setTransitioning(true);
@@ -560,7 +571,7 @@ function App() {
       setTransitioning(false);
     }, 220);
   };
-
+ 
   const chapters = [
     <Opening key="opening" opened={envelopeOpen} onOpen={() => setEnvelopeOpen(true)} onEnter={() => goTo(1)} />,
     <ArchiveWelcome key="welcome" onExplore={() => goTo(2)} />,
@@ -575,7 +586,7 @@ function App() {
     <PromiseBox key="promises" />,
     <FinalLetter key="final" />,
   ];
-
+ 
   return (
     <main className={`app-shell ${transitioning ? "transitioning" : ""}`}>
       <div className="grain" aria-hidden="true" />
@@ -615,5 +626,6 @@ function App() {
     </main>
   );
 }
-
+ 
 export default App;
+ 
