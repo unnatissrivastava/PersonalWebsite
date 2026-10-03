@@ -125,7 +125,7 @@ function Opening({
   return (
     <section className={`chapter opening ${opened ? "is-open" : ""}`}>
       <div className="opening-copy">
-        <p className="eyebrow">PRIVATE DELIVERY</p>
+        <p className="eyebrow">HAPPY BOYFRIEND’S DAY</p>
         <p>Delivered exclusively to Sahil.</p>
         <p className="hand-note">Ek chhoti si cheez hai tumhare liye cutie😭</p>
       </div>
@@ -162,7 +162,7 @@ function Opening({
         </div>
         {!opened && <p className="seal-hint">tap the seal to open</p>}
       </div>
-      <p className="edition-mark">Boyfriend’s Day · Made only for you</p>
+      <p className="edition-mark">Happy Boyfriend’s Day · Made only for you</p>
     </section>
   );
 }
@@ -546,7 +546,7 @@ function FinalLetter() {
           <p>I don't need us to have a perfect story. I just want a real one—with laughter, stupid conversations, little traditions, honest conversations, and a whole lot of love.</p>
           <p>Thank you for being my Sahil. Thank you for letting me be completely me. Thank you for being a part of my life in ways that are sometimes difficult to explain.</p>
           <p>I love you, bhukkad-proof and all. 😭❤️</p>
-          <p className="signoff">With all my love,<br /><strong>Your girl. Always.</strong></p>
+          <p className="signoff">With all my love,<br /><strong>Unnati 🎀</strong></p>
         </div>
         <div className="final-seal">S</div>
         <p className="end-mark">END OF VOLUME ONE · TO BE CONTINUED</p>
@@ -628,4 +628,3 @@ function App() {
 }
  
 export default App;
- 
