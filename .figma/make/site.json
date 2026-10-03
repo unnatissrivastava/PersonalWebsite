@@ -1,0 +1,10 @@
+{
+  "description": "A personalized digital scrapbook for Sahil, featuring heartfelt letters, favorite songs, and cherished memories, creating an intimate keepsake experience.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
