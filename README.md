@@ -1,6 +1,6 @@
 ## 🛠️ Tech Stack
 
-- **Frontend:** React, TypeScript
+- **Frontend:** React, TypeS
 - **Build Tool:** Vite
 - **Styling:** CSS
 - **Design:** Figma
